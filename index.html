@@ -1,87 +1,120 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>名古屋初春綻放 | 2026 六天五夜深度之旅</title>
-    <!-- Google Fonts: Outfit for headings, Inter for body text -->
+    <title>名古屋 6天5夜 - 歷史、科技與早櫻巡禮</title>
+    <!-- Google Fonts: Inter for clean UI -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="2026年3月名古屋6天5夜完美行程：結合歷史古蹟、現代科技與初春百花盛開的美景。">
 </head>
+
 <body>
-    <!-- Navbar (Glassmorphism) -->
-    <nav class="navbar">
-        <div class="logo">NAGOYA <span>2026</span></div>
-        <ul class="nav-links">
-            <li><a href="#hero">首頁</a></li>
-            <li><a href="#itinerary">行程總覽</a></li>
-            <li><a href="#tips">行前準備</a></li>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="tag">2026 最新推薦行程</span>
+            <h1 class="hero-title">初春綻放：名古屋 6天5夜</h1>
+            <p class="hero-subtitle">結合歷史古蹟、現代科技的探索與賞櫻行程。包含最新預估花費與防寒指南以及必吃美食的私房路線。</p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky-nav">
+        <ul class="day-list" id="day-nav">
+            <li><a href="#day-1" class="active"><span class="day-num">Day 1</span><span
+                        class="day-title">市區夜景</span></a></li>
+            <li><a href="#day-2"><span class="day-num">Day 2</span><span class="day-title">歷史古蹟</span></a></li>
+            <li><a href="#day-3"><span class="day-num">Day 3</span><span class="day-title">科技港灣</span></a></li>
+            <li><a href="#day-4"><span class="day-num">Day 4</span><span class="day-title">童話合掌</span></a></li>
+            <li><a href="#day-5"><span class="day-num">Day 5</span><span class="day-title">文化科普</span></a></li>
+            <li><a href="#day-6"><span class="day-num">Day 6</span><span class="day-title">自然賦歸</span></a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-overlay"></div>
-        <!-- We will inject the generated image via CSS or JS later. Placed a placeholder class for now -->
-        <div class="hero-bg"></div>
-        
-        <div class="hero-content">
-            <span class="eyebrow">Spring 2026</span>
-            <h1 class="hero-title">名古屋初春綻放</h1>
-            <p class="hero-subtitle">六天五夜深度之旅：歷史、科技與櫻花的邂逅</p>
-            <a href="#itinerary" class="cta-button">開始探索行程</a>
-        </div>
-        
-        <div class="scroll-indicator">
-            <span class="mouse">
-                <span class="wheel"></span>
-            </span>
-            <p>Scroll to explore</p>
-        </div>
-    </section>
+    <!-- Main Content Area -->
+    <div class="container layout-2-col">
 
-    <!-- Main Content -->
-    <main>
-        <!-- Itinerary Section -->
-        <section id="itinerary" class="itinerary-section">
-            <h2 class="section-title">行程總覽 <span>Itinerary</span></h2>
-            <div class="timeline-container" id="timeline">
-                <!-- Timeline items will be injected via JS -->
-            </div>
-        </section>
+        <!-- Left Column: Itinerary Content -->
+        <main class="left-col">
 
-        <!-- Travel Tips Section -->
-        <section id="tips" class="tips-section">
-            <div class="tips-container glass-card">
-                <h2 class="section-title">行前準備 <span>Travel Tips</span></h2>
-                <div class="tips-grid">
-                    <div class="tip-card">
-                        <h3>🌤️ 天氣與穿著</h3>
-                        <p>3 月的名古屋氣溫約在 3°C 至 13°C 之間。建議採「洋蔥式穿搭」，並準備防風外套與好走的鞋子。</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>🚄 交通票券</h3>
-                        <p>市區觀光強烈建議購買「地鐵全線24小時券」或「週末環保券」(若遇假日)，省錢又方便。</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>🌸 賞櫻預測</h3>
-                        <p>往年櫻花大約在 3 月下旬滿開。請隨時關注 2026 年的櫻花前線預測，並提早預訂住宿。</p>
-                    </div>
+            <!-- Warning Box -->
+            <div class="alert-box">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <h3>2026 行前必看更新</h3>
+                    <ul>
+                        <li><strong>氣候穿著：</strong> 3月名古屋約 3°C~13°C，早晚溫差大，建議「洋蔥式穿搭」並攜帶防風外套保暖。</li>
+                        <li><strong>交通神卡：</strong> 建議購買「地鐵全線24小時券」或是「週末環保券」(週末地鐵巴士搭到飽)，省力又省錢。</li>
+                        <li><strong>賞櫻情報：</strong> 往年大多於 3月下旬滿開，賞花勝地如名古屋城、鶴舞公園會非常擁擠，建議提早出發。</li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <!-- Day Itinerary Blocks (Injected via JS) -->
+            <div id="itinerary-content">
+                <!-- Data will be populated here -->
+            </div>
+
+        </main>
+
+        <!-- Right Column: Sidebar -->
+        <aside class="right-col">
+
+            <!-- Google Maps Embed -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title"><span class="icon">🗺️</span> 景點地圖</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104526.06915264625!2d136.8378513926527!3d35.138406560049495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003709e107b2365%3A0x2a9622d4e8cb9342!2z5pel5pys5oSb55-l5Y6_5ZCN5Y-k5bGL5biC!5e0!3m2!1szh-TW!2stw!4v1709113600000!5m2!1szh-TW!2stw"
+                        width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Budget Estimate -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">預算預估 (每人)</h3>
+                <ul class="budget-list">
+                    <li>
+                        <span class="item-name">機票 (來回)</span>
+                        <span class="item-price">約 TWD 12,000</span>
+                    </li>
+                    <li>
+                        <span class="item-name">住宿 (平價商旅 5晚)</span>
+                        <span class="item-price">約 TWD 8,000</span>
+                    </li>
+                    <li>
+                        <span class="item-name">交通與門票 (含合掌村巴士)</span>
+                        <span class="item-price">約 TWD 6,500</span>
+                    </li>
+                    <li>
+                        <span class="item-name">餐飲與其他花費</span>
+                        <span class="item-price">約 TWD 10,000</span>
+                    </li>
+                    <li class="total">
+                        <span class="item-name">大約總價</span>
+                        <span class="item-price highlight">約 TWD 36,500</span>
+                    </li>
+                </ul>
+                <p class="budget-note">* 實際費用會依淡旺季、匯率與個人選擇而有所不同。</p>
+            </div>
+
+        </aside>
+    </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Nagoya Spring Journey. Crafted for a premium experience.</p>
-        </div>
+    <footer class="site-footer">
+        <p>&copy; 2026 Nagoya Spring Journey. Built with ❤️</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
